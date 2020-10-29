@@ -56,7 +56,7 @@
 enum Sm2135Color { SM2135_WCGRB, SM2135_WCBGR };
 
 //                              RGB current         CW current
-const uint8_t SM2135_CURRENT = (SM2135_20MA << 4) | SM2135_15MA;  // See https://github.com/arendst/Tasmota/issues/6495#issuecomment-549121683
+const uint8_t SM2135_CURRENT = (SM2135_20MA << 4) | SM2135_60MA;  //increased white to 60mA (19W) See https://github.com/arendst/Tasmota/issues/6495#issuecomment-549121683
 
 struct SM2135 {
   uint8_t clk = 0;
